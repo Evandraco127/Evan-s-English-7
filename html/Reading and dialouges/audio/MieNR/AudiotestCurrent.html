@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+<style type="text/css">
+
+#styles{ shape-outside:circle(50%);
+width:300px;
+height:300px;
+background-color:#306;
+}
+</style>
+	</head>
+<body>
+<div id="styles">
+    <p id="one">This is not a TEST!!</p>
+    <p id="two">This is not a TEST!!</p>
+    </div>
+    
+
+
+  <script> 
+
+var audio =document.createElement("audio");	
+var happyList=[ 'NiceToo.mp3','canU.mp3']
+
+
+	
+document.getElementById("one").addEventListener("click",audioOne,false);
+	function audioOne (){
+	
+	audio.src=happyList[0];
+	audio.play();}
+	
+	
+	
+	
+	
+	
+document.getElementById("two").addEventListener("click",audioTwo,false);
+	function audioTwo (){
+	audio.src=happyList[1];
+	audio.play();}
+	
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+<title>Wolf and Drake vocab index</title>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<style type="text/css">
+
+body{ 
+font-family: 'Open Sans Condensed', sans-serif;
+display:-webkit-box; 
+display:-webkit-flex; 
+display:-ms-flexbox; 
+display:flex; -webkit-flex-wrap:wrap; 
+-ms-flex-wrap:wrap; 
+flex-wrap:wrap;
+-webkit-box-pack:center;
+-webkit-justify-content:center;
+-ms-flex-pack:center;
+justify-content:center;
+}
+#content{ width:90vw; height:95%; border:.1em solid black; display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-flex-wrap:wrap; -ms-flex-wrap:wrap; flex-wrap:wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center; border-radius:.4em;}
+
+h1{ text-align:center; font-size:2.3rem;} 
+
+#header{ color:#FFF; width:95vw; background-color:# F60; margin:5px; border-radius:.4em; font-size:2.5rem; background: -webkit-gradient(linear, left top, left bottom, from(#C30), to(#F90));
+	background: -moz-linear-gradient(top, #C30),  #F90);}
+
+#Vocabulary{ color:#09F; width:80vw;  border:.1em solid black;border-radius:.7em; margin:1%;font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;}
+	
+li{text-align:center; list-style:none; font-size:2rem;}
+a { text-decoration:none;
+text-emphasis:none;
+}
+
+
+
+</style>
+<style type="text/javascript">
+
+
+</style>
+
+<body>
+<div id="content">
+<div id="header">
+<h1>Wolf and Drake </h1>
+</div>
+
+
+<div id="Dialogues">
+<h1> Vocabulary　単語</h1>
+<ul>
+<li><a href="WnDVocanTouch.html">Vocab Touch and Listen</a></li>
+<li><a href="VocabMatch/WnDVocabMtch.html">Vocab Match</a></li>
+
+<li></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<script type="text/javascript" src="../../../Akiko Read to me/The Evan 2nd Raising Project/Evans7/Novemeber various/jquery-ui.js">
+</script>
+<script type="text/javascript">
+
+
+
+	$(document).ready(function() {
+    $("#content").load("Evans7relyOn.html");
+});
+$('a').click(function() {
+var page = $(this).attr('href');
+$("#content").load("page");
+return false;
+});
+	
+</script>
+
+</html>

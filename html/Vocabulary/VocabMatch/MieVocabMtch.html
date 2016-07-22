@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Mie Vocab Match</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.touch-punch.js"></script>
+<script type="text/javascript" src="js/Evdnd.js"></script>
+<script type="text/javascript"> 
+
+
+
+var butterfly = new Audio();
+butterfly.src="../02miesvocab/audio/butterfly01.mp3"
+function butterfly1 (num) {
+	butterfly.play();} 
+	
+	var cherryTree = new Audio();
+cherryTree.src="../02miesvocab/audio/cherryTree.mp3"
+function cherryTree02 (num) {
+	cherryTree.play();} 
+
+var grass = new Audio();
+grass.src="../02miesvocab/audio/grass.mp3";
+function grass3 (num) {
+	grass.play();} 
+
+
+	
+	var flowers = new Audio();
+flowers.src="../02miesvocab/audio/flowers04.mp3";
+function flowers4 (num) {
+	flowers.play();} 
+	
+	var mouse = new Audio();
+mouse.src="../02miesvocab/audio/mouse05.mp3";
+function mouse5 (num) {
+	mouse.play();} 
+	
+	
+	var pillow = new Audio();
+pillow.src="../02miesvocab/audio/pillow.mp3";
+function pillow6 (num) {
+	pillow.play();} 
+	
+	var toothbrush = new Audio();
+toothbrush.src="../02miesvocab/audio/toothbrush.mp3";
+function toothbrush7 (num) {
+	toothbrush.play();} 
+	
+	var toothpaste = new Audio();
+toothpaste.src="../02miesvocab/audio/toothpaste.mp3";
+function toothpaste8 (num) {
+	toothpaste.play();} 
+	
+	</script>
+<style type="text/css">
+
+	
+	img{ height:20%; width:20%;}
+#pictures img { border:1px solid #0C0;height:18%; width:18%; webkit-border-radius: 10px;
+	       -moz-border-radius: 10px;
+		   border-radius: 10px;-webkit-box-shadow: rgba(0,0,2,1) 0 1px 3px;
+	-moz-box-shadow: rgba(0,0,2,1) 0 1px 0;
+	text-shadow: rgba(0,0,2,.4) 0 1px 0;
+	-webkit-text-stroke: 1px transparent;}
+	
+		
+	body{ display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex; 
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}
+
+
+#content{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+border:1px solid #06F;
+webkit-border-radius: 10px;
+	       -moz-border-radius: 10px;
+		   border-radius: 10px;
+
+-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;
+
+
+height:400%; width:100%;
+text-align:center;
+}
+
+
+#pictures{
+height:100%; width:90%;
+
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+margin:30px 2%;
+border:1px solid #06F;
+}
+			#pictures div{
+height:20%; width:20%;
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+display:inline;
+
+ border:none;
+
+}
+
+
+#cardSlots{
+
+height:100%; width:90%;
+
+
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+
+color:#3F0;}
+			#cardSlots div{ hheight:50%; width:50%;
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+
+-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;
+display:inline;
+ border:none;
+padding:2%;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div id="content">
+
+<div id="pictures">
+
+  <div><img src="../02miesvocab/toothpaste.png" id="Drag8" onClick="toothpaste.play()"></div>
+
+
+<div><img src="../02miesvocab/Grass.jpg"  id="Drag2" onClick="grass.play()"></div>
+
+  <div ><img src="../02miesvocab/mice.png" id="Drag4" onClick="mouse.play()"></div>
+   <div ><img src="../02miesvocab/Cherrytree.png" id="Drag1" onClick="cherryTree.play()"></div>
+
+  <div><img src="../02miesvocab/LavenderFlowers.png" id="Drag3" onClick="flowers.play()"></div>
+   <div><img src="../02miesvocab/Toothbrush.png" id="Drag5" onClick="toothbrush.play()"></div>
+
+<div><img src="../02miesvocab/butterfly.png" id="Drag6" onClick="butterfly.play()"></div>
+
+  <div><img src="../02miesvocab/pillow.png" id="Drag7" onClick="pillow.play()"></div>
+
+
+  </div>
+  
+
+  
+  
+  <div id="cardSlots"> 
+ 
+<div ><img src="02mieWRD/toothbrush.svg" id="Drop5"></div>
+  <div ><img src="02mieWRD/butterfly.svg" id="Drop6"></div>
+   <div><img src="02mieWRD/flowers.svg" id="Drop3"></div>
+ <div ><img src="02mieWRD/cherrytree.svg"id="Drop1" ></div>
+  <div><img src="02mieWRD/mouse.svg" id="Drop4"></div>
+
+    <div><img src="02mieWRD/pillow.svg" id="Drop7"></div>
+      <div><img src="02mieWRD/grass.svg" id="Drop2"></div>
+  <div><img src="02mieWRD/toothpaste.svg" id="Drop8"></div>
+  </div>
+</div>
+
+</body>
+</html>

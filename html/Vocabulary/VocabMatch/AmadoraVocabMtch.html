@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Amadora Vocab Match</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.touch-punch.js"></script>
+<script type="text/javascript" src="js/Evdnd.js"></script>
+<script type="text/javascript"> 
+
+var bed = new Audio();
+bed.src="../audio/Bedroom 寝室/English/bed.mp3";
+function bed2 (num) {
+	bed.play();}
+	
+var closet = new Audio();
+closet.src="../audio/Bedroom 寝室/English/closet.mp3";
+function closet4 (num) {
+	closet.play();}
+
+var blanket = new Audio();
+blanket.src="../audio/Bedroom 寝室/English/blanket.mp3";
+function blanket5 (num) {
+	blanket.play();} 
+	
+var tights = new Audio();
+tights.src="../audio/Clothes 衣服/English/tights.mp3";
+function tights6 (num) {
+	tights.play();}
+	// Evan's Audio
+	
+var book = new Audio();
+book.src="../audio/Bedroom 寝室/English/book.mp3";
+function bk6 (num) {
+	tights.book();}
+	
+	var clothes = new Audio();
+clothes.src="../audio/Clothes 衣服/English/clothes.mp3";
+function clths6 (num) {
+	clothes.play();}
+	
+	var ruler = new Audio();
+ruler.src="../audio/Classroom　/ruler.mp3";
+function rlr6 (num) {
+	ruler.play();}
+	
+	var tiger = new Audio();
+tiger.src="../audio/Classroom　/tiger.mp3";
+function tiger6 (num) {
+	tiger.play();}
+	
+	</script>
+
+<style type="text/css">
+	img{ height:20%; width:20%;}
+		#pictures img { border:1px solid #F93;height:18%; width:18%; webkit-border-radius: 10px;
+	       -moz-border-radius: 10px;
+		   border-radius: 10px;-webkit-box-shadow: rgba(0,0,2,1) 0 1px 3px;
+	-moz-box-shadow: rgba(0,0,2,1) 0 1px 0;
+	text-shadow: rgba(0,0,2,.4) 0 1px 0;
+	-webkit-text-stroke: 1px transparent;}	
+		   
+	body{ display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex; 
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}
+
+
+#content{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+border:1px solid #06F;
+webkit-border-radius: 10px;
+	       -moz-border-radius: 10px;
+		   border-radius: 10px;
+
+-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;
+
+
+height:400%; width:100%;
+text-align:center;
+}
+
+
+#pictures{
+height:100%; width:90%;
+
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+margin:30px 2%;
+border:1px solid #06F;
+}
+			#pictures div{
+height:20%; width:20%;
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+display:inline;
+
+ border:none;
+
+}
+
+
+#cardSlots{
+
+height:100%; width:90%;
+
+
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+
+color:#3F0;}
+			#cardSlots div{ hheight:50%; width:50%;
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+
+-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;
+display:inline;
+ border:none;
+padding:2%;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div id="content">
+
+<div id="pictures">
+ <div><img src="../01amadorasvocab/bed.png" id="Drag1" onClick="bed.play()"></div>
+
+<div><img src="../01amadorasvocab/blanket.png" id="Drag2"onClick="blanket.play()"></div>
+
+  <div><img src="../01amadorasvocab/Book copy.png" id="Drag3" onClick="book.play()"></div>
+
+  <div><img src="../01amadorasvocab/closet.png" id="Drag4" onClick="closet.play()"></div>
+   <div><img src="../01amadorasvocab/clothes.png" id="Drag5" onClick="clothes.play()"></div>
+
+<div><img src="../01amadorasvocab/ruler copy.png" id="Drag6" onClick="ruler.play()"></div>
+
+  <div><img  src="../01amadorasvocab/tigerwhite.png"id="Drag7" onClick="tiger.play()"></div>
+
+  <div><img src="../01amadorasvocab/tights.png" id="Drag8" onClick="tights.play()">
+  </div>
+
+  </div>
+  
+
+  
+  
+  <div id="cardSlots"> 
+ 
+<div><img src="01amadoraWRD/clothes.svg" id="Drop5"></div>
+  <div><img src="01amadoraWRD/ruler.svg" id="Drop6"></div>
+   <div><img src="01amadoraWRD/book.svg" id="Drop3"></div>
+ <div><img src="01amadoraWRD/bed.svg" id="Drop1"></div>
+  <div><img src="01amadoraWRD/closet.svg" id="Drop4"></div>
+  <div><img src="01amadoraWRD/blanket.svg" id="Drop2"></div>
+    <div><img src="01amadoraWRD/tiger.svg" id="Drop7"></div>
+  <div><img src="01amadoraWRD/tights.svg" id="Drop8"></div>
+  </div>
+</div>
+
+</body>
+</html>

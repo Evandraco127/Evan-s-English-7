@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Mie Vocabulary 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../../css/vocabulary.css">
+<script type="text/javascript" src="../../jquery.ui.touch-punch.js"></script>
+<script type="text/javascript"  src="../../jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../jquery-ui.min.js"></script>
+
+<script type="text/javascript"> 
+
+var cleanUp = new Audio();
+cleanUp.src="audio/cleanUp01.mp3";
+function cleanUp01 (num) {
+	cleanUp.play();} 
+var Swfloor = new Audio();
+Swfloor.src="audio/Sweep the floor 02.mp3";
+function Swfloor02 (num) {
+	Swfloor.play();} 
+
+var laundry = new Audio();
+laundry.src="audio/Do the laundry 03.mp3";
+function laundry3 (num) {
+	laundry.play();} 
+	
+	var walkDog = new Audio();
+walkDog.src="audio/Walk the dog04.mp3";
+function walkDog4 (num) {
+	walkDog.play();} 
+	
+	var dishes = new Audio();
+dishes.src="audio/wash the dishes05.mp3";
+function dishes5 (num) {
+	dishes.play();} 
+	
+	var feedTheCat = new Audio();
+feedTheCat.src="audio/feedTheCat_06.mp3";
+function feedTheCat6 (num) {
+	feedTheCat.play();} 
+	
+	var onLight = new Audio();
+onLight.src="audio/Turn on the Light07.mp3";
+function onLight7 (num) {
+	onLight.play();} 
+	
+	var offLight = new Audio();
+offLight.src="audio/turn off the light08.mp3";
+function offLight8 (num) {
+	offLight.play();} 
+	
+	
+
+
+	$(document).ready(function() {
+    $("#content").load("AmaVocanTouch.html");
+});
+$('a').click(function() {
+var page = $(this).attr('href');
+$("#content").load("page");
+return false;
+});
+	
+
+	 </script>
+
+
+
+</head>
+<body>
+
+<div id="content">
+
+<ul style="display:none;">
+<li><a href="../Vocabulary/Amadoras_vocabulary.html">Page 1</a></li>
+<li><a href="../Vocabulary/Mies_vocabulary.html">Page 2</a></li>
+<li><a href="../Vocabulary/Elipidas_vocabulary.html">Page 3</a></li>
+<li><a href="">Page 4</a></li>
+<li><a href="">Page 5</a></li>
+<li><a href="">Page 6</a></li>
+<li><a href="">Page 7</a></li>
+</ul>
+
+
+<div id="wrap" style="background-color:#F63">
+  
+  <div id="cardSlots"> 
+
+<div id="slot_1"><img src="Cleanup.png" onClick="cleanUp.play()"></div>
+
+
+
+  </div>
+    <div id="cardSlots2"> 
+<div id="slot_2"> <img src="SweeptheFloor.png"onClick="Swfloor.play()"></div>
+
+  </div>
+  
+    
+    <div id="cardSlots3"> 
+
+<div id="slot_3"> <img src="laundry.png" onClick="laundry.play()"></div>
+
+  </div>
+  
+    
+    <div id="cardSlots4"> 
+<div id="slot_4"><img src="Walk the dog.png" onClick="walkDog.play()"></div>
+
+  </div>
+  
+    
+    <div id="cardSlots5"> 
+
+<div id="slot_5"><img src="WashtheDishes.png" onClick="dishes.play()"></div>
+
+
+
+  </div>
+  
+    
+    <div id="cardSlots6"> 
+
+<div id="slot_6"><img src="FeedtheCat.png" onClick="feedTheCat.play()" ></div>
+  </div>
+  
+    
+    <div id="cardSlots7"> 
+<div id="slot_7"><img src="thelight.png" onClick="onLight.play()" ></div>
+  </div>
+     <div id="cardSlots8"> 
+<div id="slot_8"><img src="Turnoffthelight.png" onClick="offLight.play()"></div>
+</div> 
+ </div> 
+
+   </div>
+
+&copyEvan Charles McArthur 2016
+</body>
+
+</html>

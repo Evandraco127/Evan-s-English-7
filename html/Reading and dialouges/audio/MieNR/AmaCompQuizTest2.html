@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+
+body{ font-size:2.5em; display:flex;
+display:-webkit-box; 
+display:-webkit-flex; 
+display:-ms-flexbox; 
+display:flex; -webkit-flex-wrap:wrap; 
+-ms-flex-wrap:wrap; 
+flex-wrap:wrap;
+-webkit-box-pack:center;
+-webkit-justify-content:center;
+-ms-flex-pack:center;
+justify-content:center;
+    font-family: Arial, Helvetica, sans-serif;
+font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+background-color:#FF9;}
+
+
+div#test{ border:#000 1px solid; padding:5%; width:70%; height:100%;
+border-radius:10px; 
+-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+background-color:#FFF;}
+
+button {
+
+width:20%; font-size:.5em; border:.1rem solid black; border-radius:.7em; text-align:center; margin:.07%;
+color: rgb(255, 230, 230);
+
+padding: 9px;
+text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+-webkit-border-radius: 54px;
+-moz-border-radius: 54px;
+border-radius: 54px;
+background: rgb(34, 202, 20);
+background: -moz-linear-gradient(119deg, rgb(34, 202, 20) 30%, rgb(90, 216, 20) 70%);
+background: -webkit-linear-gradient(119deg, rgb(34, 202, 20) 30%, rgb(90, 216, 20) 70%);
+background: -o-linear-gradient(119deg, rgb(34, 202, 20) 30%, rgb(90, 216, 20) 70%);
+background: -ms-linear-gradient(119deg, rgb(34, 202, 20) 30%, rgb(90, 216, 20) 70%);
+background: linear-gradient(29deg, rgb(34, 202, 20) 30%, rgb(90, 216, 20) 70%);
+-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);}
+
+</style>
+<script>
+
+
+
+
+	
+
+var audio =document.createElement("audio");	
+var happyList=[ 'NiceToo.mp3','canU.mp3']	
+var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct = 0;
+var questions = [
+    [ "Who is Amadora?", "She is a bed.", "She is a tiger.", "She is a flower.", "She is a girl.","D" ],/*一番質問答え*/
+	[ "What is Q?", "Q is a fish.","He is a turtle.", "He is a book.","Q is a tiger.", "D" ],/*二　番質問答え*/
+    [ "Who can talk?","The pen can talk","Q can talk.","The books can talk.","The flowers can talk.", "B" ],/*三　番質問答え*/
+	[ "What color is Q?", "Blue and green.", 
+"Yellow and pink.","Orange and black.","Purple and green.", "C" ],/*四　番質問答え*/
+	[ "Where are Amadora and Q?", "They are in the park.", "Amadoara and Q are in her room.", "They are in the hall.", "Amadoara and Q are in the kitchen.","B" ],/*五　番質問答え*/
+		[ "(          ) is a clock.", "she", "that", "these", "these","B" ],/*六　番質問答え*/
+			[ "Amadora has a (       ).", "a book", "some icecream", "a banana", "fish","A" ]/*七　番質問答え*/
+		
+				
+];
+function _(x){return document.getElementById(x);}
+function renderQuestion(){
+	test = _("test");
+	if(pos >= questions.length){
+		test.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct</h2>";
+		_("test_status").innerHTML = "Test Completed";
+		pos = 0;
+		correct = 0;
+		return false;
+	}
+	
+	
+	
+	_("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
+	question = questions[pos][0];
+	chA = questions[pos][1];
+	chB = questions[pos][2];
+	chC = questions[pos][3];
+	chD = questions[pos][4];
+	test.innerHTML = "<h3>"+question+"</h3>";
+	test.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
+	test.innerHTML += "<button onclick='audioOne ()'> play</button><br>";
+	test.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
+	test.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br>";
+    test.innerHTML += "<input type='radio' name='choices' value='D'> "+chD+"<br><br>";
+	test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+}
+function checkAnswer(){
+	choices = document.getElementsByName("choices");
+	
+	for(var i=0; i<choices.length; i++){
+		if(choices[i].checked){
+			choice = choices[i].value;
+		}
+	}
+	if(choice == questions[pos][5]){
+		correct++;
+	}
+	pos++;
+	renderQuestion();
+}
+window.addEventListener("load", renderQuestion, false);
+</script>
+</head>
+<body>
+<h2 id="test_status"></h2>
+<div id="test"></div>
+
+
+  <script> 
+
+
+	function audioOne (){
+	audio.src=happyList[0];
+	audio.play();}
+	
+    </script>
+</body>
+</html>

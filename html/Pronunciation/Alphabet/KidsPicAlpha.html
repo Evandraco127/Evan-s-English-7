@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+<title>Alphabet Phonics</title>
+</head>
+
+<script type="text/javascript" src="../../jquery.ui.touch-punch.js"></script>
+<style type="text/css">
+body{ 
+font-family: 'Open Sans Condensed', sans-serif;
+font-size:2rem;
+display:-webkit-box; 
+display:-webkit-flex; 
+display:-ms-flexbox; 
+display:flex; -webkit-flex-wrap:wrap; 
+-ms-flex-wrap:wrap; 
+flex-wrap:wrap;
+-webkit-box-pack:center;
+-webkit-justify-content:center;
+-ms-flex-pack:center;
+justify-content:center;
+}
+
+
+a:link    {color:#090; text-decoration:none;}
+a:visited {color:#F90; background-color:transparent; text-decoration:none;}
+a:hover   {color:#C60; text-decoration:none;}
+a:active  {color:none; background-color:transparent; text-decoration:none;}
+
+#content{ width:100vw; height:95%; border:.1em solid black;display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-flex-wrap:wrap; -ms-flex-wrap:wrap; flex-wrap:wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center; border-radius:.4em;}
+
+h1{ text-align:center; font-size:.7rem; width:100%;} 
+h2{ text-align:center; font-size:1.8rem; width:100%;} 
+
+/*#header{ color:#FFF; width:95vw; background-color:#060; margin:5px; font-weight:900; border-radius:.4em; font-size:1.8rem; background: -webkit-gradient(linear, left top, left bottom, from(#C60), to(#F96));
+	background: -moz-linear-gradient(top, #C60,  #F96);}}*/
+
+#Pronunciation{ color:#C30; width:90vw; height:100%; border:.1em solid black;border-radius:.7em; margin:1%; font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-flex-wrap:wrap; -ms-flex-wrap:wrap; flex-wrap:wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center; 
+
+
+}
+	
+li{text-align:center; list-style:none; font-size:1.1rem;}
+.alphaLets { width:30%; border:.1rem solid black; border-radius:.7em; text-align:center; margin:.07%;}
+.alphaLetsA {
+	
+width:30%; border:.1rem solid black; border-radius:.7em; text-align:center; margin:.07%;
+color: rgb(255, 230, 230);
+
+padding: 9px;
+text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+-webkit-border-radius: 54px;
+-moz-border-radius: 54px;
+border-radius: 54px;
+background: rgb(34, 202, 20);
+background: -moz-linear-gradient(119deg, rgb(34, 202, 20) 30%, rgb(90, 216, 20) 70%);
+background: -webkit-linear-gradient(119deg, rgb(34, 202, 20) 30%, rgb(90, 216, 20) 70%);
+background: -o-linear-gradient(119deg, rgb(34, 202, 20) 30%, rgb(90, 216, 20) 70%);
+background: -ms-linear-gradient(119deg, rgb(34, 202, 20) 30%, rgb(90, 216, 20) 70%);
+background: linear-gradient(29deg, rgb(34, 202, 20) 30%, rgb(90, 216, 20) 70%);
+-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);}
+
+
+
+
+
+
+
+</style>
+
+<body>
+<div id="content">
+<div id="header">
+<h1>Evan's English</h1>
+</div>
+
+
+<div id="Pronunciation">
+<h2> Pronunciation　発音 <a href="KidsPicAlpha.html">Alphabet</a> <a href="KidsPicIPA.html">IPA</a></h2>
+<div class="alphaLetsA" onclick="A.play()">Aa</div>
+<div class="alphaLets" onclick="B.play()">Bb</div>
+<div class="alphaLets"onclick="C.play()">Cc</div>
+<div class="alphaLets" onclick="D.play()">Dd</div>
+<div class="alphaLets" onclick="E.play()">Ee</div>
+<div class="alphaLets" onclick="F.play()">Ff</div>
+<div class="alphaLets" onclick="G.play()">Gg</div>
+<div class="alphaLets" onclick="H.play()">Hh</div>
+<div class="alphaLets" onclick="I.play()">Ii</div>
+<div class="alphaLets" onclick="J.play()">Ji</div>
+<div class="alphaLets" onclick="K.play()">Kk</div>
+<div class="alphaLets" onclick="L.play()">Ll</div>
+<div class="alphaLets" onclick="M.play()">Mm</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+<script type="text/javascript" src="../../../Akiko Read to me/The Evan 2nd Raising Project/Evans7/Novemeber various/jquery-ui.js">
+</script>
+<script type="text/javascript">
+
+var A = new Audio();
+A.src ="alphabetsounds/A-M/A.m4a";
+function Apho (num) {
+	A.play();
+	
+}
+var AA = new Audio();
+AA.src ="alphabetsounds/A-M/AA.m4a";
+function AApho (num) {
+	AA.play();}
+
+var B = new Audio();
+B.src ="alphabetsounds/A-M/B.m4a";
+function Bpho (num) {
+	B.play();}
+var bi2 = new Audio();
+bi2.src ="alphabetsounds/A-M/bi2.m4a";
+function bi2pho (num) {
+	bi2.play();}
+	
+	
+	var C = new Audio();
+C.src ="alphabetsounds/A-M/C.m4a";
+function Cpho (num) {
+	C.play();}
+var si = new Audio();
+si.src ="alphabetsounds/A-M/si.m4a";
+function sipho (num) {
+	si.play();}
+	
+	var D = new Audio();
+D.src ="alphabetsounds/A-M/D.m4a";
+function Dpho (num) {
+	D.play();}
+var di = new Audio();
+di.src ="alphabetsounds/A-M/di.m4a";
+function dipho (num) {
+	di.play();}
+	
+		var E = new Audio();
+E.src ="alphabetsounds/A-M/E.m4a";
+function Epho (num) {
+	E.play();}
+var i$ = new Audio();
+i$.src ="alphabetsounds/A-M/i$.m4a";
+function i$pho (num) {
+	i$.play();}
+	
+			var F = new Audio();
+F.src ="alphabetsounds/A-M/F.m4a";
+function Fpho (num) {
+	F.play();}
+var ef = new Audio();
+ef.src ="alphabetsounds/A-M/ef.m4a";
+function efpho (num) {
+	ef.play();}
+	
+	var G = new Audio();
+G.src ="alphabetsounds/A-M/G.m4a";
+function Gpho (num) {
+	G.play();}
+var dʒi = new Audio();
+dʒi.src ="alphabetsounds/A-M/dʒi.m4a";
+function dʒipho (num) {
+	dʒi.play();}
+	
+	var H = new Audio();
+H.src ="alphabetsounds/A-M/H.m4a";
+function Hpho (num) {
+	H.play();}
+var eɪtʃ = new Audio();
+eɪtʃ.src ="alphabetsounds/A-M/eɪtʃ.m4a";
+function eɪtʃpho (num) {
+	eɪtʃ.play();}
+	
+	var I = new Audio();
+I.src ="alphabetsounds/A-M/I.m4a";
+function Ipho (num) {
+	I.play();}
+var ai = new Audio();
+ai.src ="alphabetsounds/A-M/ai.m4a";
+function aipho (num) {
+	ai.play();}
+	
+	var J = new Audio();
+J.src ="alphabetsounds/A-M/J.m4a";
+function Jpho (num) {
+	J.play();}
+var dʒeɪ = new Audio();
+dʒeɪ.src ="alphabetsounds/A-M/dʒeɪ.m4a";
+function dʒeɪpho (num) {
+	dʒeɪ.play();}
+	
+	var K = new Audio();
+K.src ="alphabetsounds/A-M/K.m4a";
+function Kpho (num) {
+	K.play();}
+var keɪ = new Audio();
+keɪ.src ="alphabetsounds/A-M/keɪ.m4a";
+function keɪpho (num) {
+	keɪ.play();}
+	
+		var L = new Audio();
+L.src ="alphabetsounds/A-M/L.m4a";
+function Lpho (num) {
+	el.play();}
+var el = new Audio();
+el.src ="alphabetsounds/A-M/el.m4a";
+function elpho (num) {
+	el.play();}
+	
+		var M = new Audio();
+M.src ="alphabetsounds/A-M/M.m4a";
+function Mpho (num) {
+	M.play();}
+var em = new Audio();
+em.src ="alphabetsounds/A-M/em.m4a";
+function empho (num) {
+	em.play();}
+
+	$(document).ready(function() {
+    $("#content").load("KidsPicAlpha.html");
+});
+$('a').click(function() {
+var page = $(this).attr('href');
+$("#content").load("page");
+return false;
+});
+	
+</script>
+
+</html>

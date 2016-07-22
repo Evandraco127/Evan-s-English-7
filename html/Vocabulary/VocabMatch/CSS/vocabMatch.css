@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+/* Add some margin to the page and set a default font and colour */
+
+body {
+ display:-webkit-box; 
+display:-webkit-flex; 
+display:-ms-flexbox; 
+display:flex; -webkit-flex-wrap:wrap; 
+-ms-flex-wrap:wrap; 
+flex-wrap:wrap;
+-webkit-box-pack:center;
+-webkit-justify-content:center;
+-ms-flex-pack:center;
+justify-content:center;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+    color: #333;
+}
+
+/* Give headings their own font */
+
+h1, h2, h3, h4 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size:120%;}
+
+img{ width:100%; height:100%;}
+/* Main content area */
+
+#content {
+display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-flex-wrap: wrap;
+     -webkit-border-radius: 16px;
+	       -moz-border-radius: 16px;
+		     border: 3px solid  #09F;
+margin: 35px 10%;
+  padding:17px 7%;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  width:500%;
+  height:200%;
+
+ 
+  
+}
+
+
+#pictures {
+	display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex;
+	
+	     -webkit-border-radius: 10px;
+	       -moz-border-radius: 10px;
+   width:90%;
+  height: 100%;
+  padding: 5px;
+  margin:3px;
+  background-color:#039;;
+}
+
+#pictures2 {
+	display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex;
+	
+	     -webkit-border-radius: 10px;
+	       -moz-border-radius: 10px;
+   width:90%;
+  height: 100px;
+  padding: 5px;
+  margin:3px;
+  background-color:#999;
+  
+}
+#cardSlots {
+	display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex;
+	/*-webkit-justify-content:space-around;
+justify-content:space-around;*/
+	     -webkit-border-radius: 16px;
+	       -moz-border-radius: 16px;
+		  
+	
+    width:90%;
+    height: 100%;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+	background-color:#3c0;
+}
+
+#cardSlots2 {
+	display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex;
+	/*-webkit-justify-content:space-around;
+justify-content:space-around;*/
+	     -webkit-border-radius: 16px;
+	       -moz-border-radius: 16px;
+		  
+	
+    width:90%;
+    height: 100px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+	background-color:#3C0;
+}
+
+/* Individual cards and slots */
+
+#cardSlots div, #pictures div {
+	
+
+    width: 79%;
+    height: 100%;
+    padding: 5px;
+ 
+    border: 1px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin: 3px;
+    background: #fff;
+}
+#cardSlots2 div, #pictures2 div {
+	
+
+    width: 79%;
+    height: 79%;
+    padding: 1%;
+ 
+    border: 1px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin:1%;
+    background: #fff;
+}
+#cardSlots div:first-child, #pictures div:first-child {
+  margin-left: 0;
+}
+#cardSlots2 div:first-child, #pictures2 div:first-child {
+  margin-left: 0;
+}
+
+#cardSlots div.hovered {}
+
+#cardSlots div {
+  border: 1px dashed #333; height:100%;}
+#cardSlots2 div {
+  border: 1px dashed #333;}
+
+
+#pictures div {
+     -webkit-border-radius: 16px;
+	       -moz-border-radius: 16px;
+    background: #c1ecfc;
+    border: 1px solid #005575;
+    color: #005575;
+    font-size: .5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    	margin:2%;    
+}
+
+
+#pictures div.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+#pictures2 div.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+
+
+
+

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Mie Vocabulary 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../../css/vocabulary.css">
+<script type="text/javascript" src="../../jquery.ui.touch-punch.js"></script>
+<script type="text/javascript"  src="../../jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../jquery-ui.min.js"></script>
+
+<script type="text/javascript"> 
+
+
+var grass = new Audio();
+grass.src="02miesvocab/audio/grass.mp3";
+function grass3 (num) {
+	grass.play();} 
+
+var pillow = new Audio();
+pillow.src="02miesvocab/audio/pillow.mp3";
+function pillow6 (num) {
+	pillow.play();} 
+	
+	var toothbrush = new Audio();
+toothbrush.src="02miesvocab/audio/toothbrush.mp3";
+function toothbrush7 (num) {
+	toothbrush.play();} 
+	
+	var toothpaste = new Audio();
+toothpaste.src="02miesvocab/audio/toothpaste.mp3";
+function toothpaste8 (num) {
+	toothpaste.play();} 
+	
+	
+
+
+	$(document).ready(function() {
+    $("#content").load("AmaVocanTouch.html");
+});
+$('a').click(function() {
+var page = $(this).attr('href');
+$("#content").load("page");
+return false;
+});
+	
+
+	 </script>
+
+
+
+</head>
+<body>
+
+<div id="content">
+<div id="vocabulary">
+  <h1>Mie 単語 2</h1></div>
+
+<ul style="display:none;">
+<li><a href="Amadoras_vocabulary.html">Page 1</a></li>
+<li><a href="Mies_vocabulary.html">Page 2</a></li>
+<li><a href="Elipidas_vocabulary.html">Page 3</a></li>
+<li><a href="">Page 4</a></li>
+<li><a href="">Page 5</a></li>
+<li><a href="">Page 6</a></li>
+<li><a href="">Page 7</a></li>
+</ul>
+
+
+<div id="wrap" style="background-color:#9F9;">
+  
+  <div id="cardSlots" > 
+
+<div id="slot_1"><img src="02miesvocab/butterfly.png" id="pill"></div>
+
+
+
+  </div>
+    <div id="cardSlots2"> 
+<div id="slot_2"> <img src="02miesvocab/Cherrytree.png"></div>
+
+  </div>
+  
+    
+    <div id="cardSlots3"> 
+
+<div id="slot_3"> <img src="02miesvocab/Grass.jpg"></div>
+
+  </div>
+  
+    
+    <div id="cardSlots4"> 
+<div id="slot_4"><img src="02miesvocab/LavenderFlowers.png"></div>
+
+  </div>
+  
+    
+    <div id="cardSlots5"> 
+
+<div id="slot_5"><img src="02miesvocab/mice.png"></div>
+
+
+
+  </div>
+  
+    
+    <div id="cardSlots6"> 
+
+<div id="slot_6"><img src="02miesvocab/pillow.png" onClick="pillow.play()"></div>
+  </div>
+  
+    
+    <div id="cardSlots7"> 
+<div id="slot_7"><img src="02miesvocab/Toothbrush.png" onClick="toothbrush.play()"></div>
+  </div>
+     <div id="cardSlots8"> 
+<div id="slot_8"><img src="02miesvocab/toothpaste.png" onClick="toothpaste.play()"></div>
+</div> 
+ </div> 
+
+   </div>
+
+&copyEvan Charles McArthur 2016
+</body>
+
+</html>

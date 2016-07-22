@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Elipida Vocab Match</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.touch-punch.js"></script>
+<script type="text/javascript" src="js/Evdnd.js"></script>
+
+<script type="text/javascript"> 
+
+var socks = new Audio();
+socks.src="../audio/Clothes 衣服/English/socks.mp3";
+function socks1 (num) {
+	socks.play();}
+	
+var tissue = new Audio();
+tissue.src="../audio/Bathroom 風呂　浴室/English/tissue.mp3";
+function tissue2 (num) {
+	tissue.play();}
+
+var skirt = new Audio();
+skirt.src="../audio/Clothes 衣服/English/skirt.mp3";
+function skirt3 (num) {
+	skirt.play();} 
+	
+var sourC = new Audio();
+sourC.src="../05elipidasvocab/audio/sourC04.mp3";
+function sourC4 (num) {
+	sourC.play();}
+
+	
+var phoenix= new Audio();
+phoenix.src="../05elipidasvocab/audio/phoenix05.mp3";
+function phoenix5 (num) {
+	phoenix.play();}
+	
+	var phone = new Audio();
+phone.src="../05elipidasvocab/audio/phone06.mp3";
+function phone6 (num) {
+	phone.play();}
+	
+	var StringC = new Audio();
+StringC.src="../05elipidasvocab/audio/StringC07.mp3";
+function StringC7(num) {
+	StringC.play();}
+	
+	var tree = new Audio();
+tree.src="../05elipidasvocab/audio/tree08.mp3";
+function tree8 (num) {
+	tree.play();}
+	
+	</script>
+
+<style type="text/css">
+
+	
+	img{ height:20%; width:20%;}
+	#pictures img { border: 1.5px solid #63C; height:18%; width:18%; webkit-border-radius: 10px;
+	       -moz-border-radius: 10px;
+		   border-radius: 10px;-webkit-box-shadow: rgba(0,0,2,1) 0 1px 3px;
+	-moz-box-shadow: rgba(0,0,2,1) 0 1px 0;
+	text-shadow: rgba(0,0,2,.4) 0 1px 0;
+	-webkit-text-stroke: 1px transparent;}
+	
+	body{ display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex; 
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}
+
+
+#content{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+border:1px solid #06F;
+webkit-border-radius: 10px;
+	       -moz-border-radius: 10px;
+		   border-radius: 10px;
+
+-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;
+
+
+height:400%; width:100%;
+text-align:center;
+}
+
+
+#pictures{
+height:100%; width:90%;
+
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+margin:30px 2%;
+border:1px solid #06F;
+}
+			#pictures div{
+height:20%; width:20%;
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+display:inline;
+
+ border:none;
+
+}
+
+
+#cardSlots{
+
+height:100%; width:90%;
+
+
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+
+color:#3F0;}
+			#cardSlots div{ hheight:50%; width:50%;
+-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;
+
+-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;
+display:inline;
+ border:none;
+padding:2%;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div id="content">
+
+<div id="pictures">
+<div><img src="../05elipidasvocab/ios.png"  onClick="phone.play()"id="Drag6"></div>
+  <div><img src="../05elipidasvocab/sock.png" id="Drag1" onClick="socks.play()"></div>
+  
+  <div><img src="../05elipidasvocab/tree.png" id="Drag8" onClick="tree.play()"></div>
+<div><img src="../05elipidasvocab/sourCandy.png" onClick="sourC.play()" id="Drag4"></div>
+ 
+
+ 
+    <div><img src="../05elipidasvocab/tissue.png" id="Drag2" onClick="tissue.play()"></div>
+   <div><img src="../05elipidasvocab/phoenix.png" id="Drag5" onClick="phoenix.play()"></div>
+
+
+
+  <div><img src="../05elipidasvocab/string.png" id="Drag7" onClick="StringC.play()"></div>
+ <div><img src="../05elipidasvocab/skirt.png" id="Drag3" onClick="skirt.play()"></div>
+
+
+  </div>
+  
+
+  
+  
+  <div id="cardSlots"> 
+ 
+<div><img src="05elipidaWRD/phoenix.svg" id="Drop5"></div>
+  <div><img src="05elipidaWRD/phone.svg" id="Drop6"></div>
+  
+   <div><img src="05elipidaWRD/skirt.svg" id="Drop3"></div>
+ <div><img src="05elipidaWRD/sock.svg" id="Drop1"></div>
+ 
+  <div><img src="05elipidaWRD/sourcandies.svg" id="Drop4"></div>
+<div><img src="05elipidaWRD/stringCheese.svg" id="Drop7"></div>
+
+      <div><img src="05elipidaWRD/tissue.svg" id="Drop2"></div>
+  <div><img src="05elipidaWRD/tree.svg" id="Drop8"></div>
+  </div>
+</div>
+
+</body>
+</html>

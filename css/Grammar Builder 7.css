@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@charset "utf-8";
+
+body {
+display:-webkit-box; 
+display:-webkit-flex; 
+display:-ms-flexbox; 
+display:flex; -webkit-flex-wrap:wrap; 
+-ms-flex-wrap:wrap; 
+flex-wrap:wrap;
+-webkit-box-pack:center;
+-webkit-justify-content:center;
+-ms-flex-pack:center;
+justify-content:center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #333;
+	font-size:2rem;
+}
+
+/* Give headings their own font */
+
+h1, h2, h3, h4 {	
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+h1{font-size:2rem;}
+
+/* Main content area */
+
+#content {
+display:-webkit-box; 
+display:-webkit-flex; 
+display:-ms-flexbox; 
+display:flex; -webkit-flex-wrap:wrap; 
+-ms-flex-wrap:wrap; 
+flex-wrap:wrap;
+-webkit-box-pack:center;
+-webkit-justify-content:center;
+-ms-flex-pack:center;
+justify-content:center;
+
+     -webkit-border-radius: 16px;
+	       -moz-border-radius: 16px;
+		     border: 2px solid #606;
+			 
+    padding:5%;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#Grammar{ color:#606; width:80vw; margin:.5%;font-family:Arial, Helvetica, sans-serif;　display:-webkit-box; 
+display:-webkit-flex; 
+display:-ms-flexbox; 
+display:flex; -webkit-flex-wrap:wrap; 
+-ms-flex-wrap:wrap; 
+flex-wrap:wrap;
+-webkit-box-pack:center;
+-webkit-justify-content:center;
+-ms-flex-pack:center;
+justify-content:center;
+font-size:2rem;
+padding:.5%;}
+
+
+#cardSlots,#cardSlots2, #cardSlots3,#cardSlots4,#cardSlots5, #cardSlots6, #cardSlots7  {
+display:-webkit-box; 
+display:-webkit-flex; 
+display:-ms-flexbox; 
+display:flex; -webkit-flex-wrap:wrap; 
+-ms-flex-wrap:wrap; 
+flex-wrap:wrap;
+-webkit-box-pack:center;
+-webkit-justify-content:center;
+-ms-flex-pack:center;
+justify-content:center;
+
+	     -webkit-border-radius: 16px;
+	       -moz-border-radius: 16px;
+		  
+    width:100%;
+	height:100%;
+    margin:1%;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+	background-color:#FFF;
+	font-size:2.1rem;}
+
+/* The initial pile of unsorted cards */
+#fancy{  border:1px solid #309;
+margin:1%;
+padding:2.5%;
+    -webkit-border-radius: 10px;
+	       -moz-border-radius: 10px;
+   width:90%; }
+#cardPile{
+display:-webkit-box; 
+display:-webkit-flex; 
+display:-ms-flexbox; 
+display:flex; -webkit-flex-wrap:wrap; 
+-ms-flex-wrap:wrap; 
+flex-wrap:wrap;
+-webkit-box-pack:center;
+-webkit-justify-content:center;
+-ms-flex-pack:center;
+justify-content:center;
+margin:1%;
+padding:2.5%;
+    -webkit-border-radius: 10px;
+	       -moz-border-radius: 10px;
+   width:90%;
+  border:1px solid #309;}
+
+
+#cardSlots div,#cardSlots2 div, #cardSlots3 div,#cardSlots4 div,#cardSlots5 div, #cardSlots6 div, #cardSlots7  div { padding:2px;}
+
+
+
+#cardPile div {
+
+
+		   padding:.5rem;
+    font-size:1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+ 
+}
+
+
+
+#cardPile div.ui-draggable-dragging {
+	    -webkit-border-radius: 10px;
+	       -moz-border-radius: 10px;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+ul li { display:inline; font-size:2rem; padding:4px; margin-top:-3%;}
+
+
+ul{ 
+    list-style: none; }
+ul li a {
+	display: block;
+	float: left;
+	border-top: 1px solid #96d1f8;
+	background: #6F3;
+	background: -webkit-gradient(linear, left top, left bottom, from( #F96), to( #603));
+	background: -moz-linear-gradient(top,  #F96,  #603);
+	height: 25%;
+	padding: 0 10px;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 3px;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	-webkit-text-stroke: 1px transparent;
+	font: bold 1.5rem "Lucida Grande", "Verdana", sans-serif;
+	color: rgba(255,255,255,.85);
+	text-decoration: none; 
+	margin: 0 5px 0 0;
+}
+ ul li a:hover {
+	border-top: 1px solid #4789b4;
+	background: #C0C;
+	background: -webkit-gradient(linear, left top, left bottom, from( #33F), to( #303));
+	background: -moz-linear-gradient(top,  #3d789f,  #28597a);
+	color: rgba(255,255,255,.85); 
+}	
+ul li a:active, nav ul li a.current {
+	border-top-color: #000;
+	background: #000;
+	position: relative;
+	top: 1px; 
+}
+
+.noun{ color:#0F3;}
+.preposition{ color:#039;}
